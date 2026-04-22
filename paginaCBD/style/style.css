@@ -1,0 +1,347 @@
+/* VARIABLES DE MARCA */
+:root {
+    --primary: #789b73;   
+    --dark: #2c4c3b;      
+    --accent: #e8e4d9;    
+    --white: #fdfdfd;     
+    --shadow: rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.3s;
+}
+
+/* RESET Y BASE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--white);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* GRID LAYOUT PRINCIPAL (Móvil) */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    min-height: 100vh;
+}
+
+/* CABECERA Y MENÚ  */
+.header {
+    grid-area: header;
+    background-color: var(--white);
+    padding: 1rem 5%;
+    border-bottom: 2px solid var(--primary);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Contenedor flexible para el logo y el botón */
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+/* botón hamburguesa */
+.hamburger-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--primary);
+    cursor: pointer;
+    display: block;
+}
+
+.menu-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    gap: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/* NUEVO: Clase que activará JavaScript */
+.menu-list.mostrar {
+    display: flex;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+    transition: color var(--transition-speed);
+}
+
+.menu-list a:hover {
+    color: var(--primary);
+}
+
+.dropdown .submenu {
+    display: none;
+    list-style: none;
+    padding-top: 0.5rem;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* CONTENIDO PRINCIPAL */
+.main-content {
+    grid-area: main;
+    padding: 2rem 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* HERO */
+.hero {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 3rem 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--primary);
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-weight: bold;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent);
+    transform: scale(1.05);
+}
+
+/* SECCIÓN PRODUCTOS */
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--dark);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: var(--white);
+    border: 1px solid var(--accent);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px var(--shadow);
+}
+
+.product-image {
+    width: 100%;
+    height: 180px;
+    background-color: var(--accent);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.product-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    margin-bottom: 1.5rem; 
+}
+
+.btn-add {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: auto; 
+    
+    transition: background-color var(--transition-speed);
+    width: 100%;
+}
+
+.btn-add:hover {
+    background-color: var(--dark);
+}
+
+/* SECCIÓN ASESORAMIENTO */
+.asesoramiento-box {
+    background-color: var(--accent);
+    padding: 3rem 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    color: var(--dark);
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    transition: background-color var(--transition-speed);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary);
+}
+
+/* PIE DE PÁGINA */
+.footer {
+    grid-area: footer;
+    background-color: var(--dark);
+    color: var(--accent);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .grid-container {
+        grid-template-columns: 220px 1fr;
+        grid-template-areas: 
+            "header main"
+            "header footer";
+    }
+
+    .header {
+        border-bottom: none;
+        border-right: 2px solid var(--primary);
+        height: 100vh;
+        justify-content: flex-start;
+        padding-top: 3rem;
+        position: sticky;
+        top: 0;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    .hamburger-btn {
+        display: none;
+    }
+
+    .menu-list {
+        display: flex;
+        width: auto;
+    }
+
+    .hero {
+        display: none;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        padding: 1.5rem 5%;
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hamburger-btn {
+        display: none;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+        width: auto;
+        padding-top: 0;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--white);
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        min-width: 200px;
+        box-shadow: 0 4px 12px var(--shadow);
+        padding: 1rem;
+    }
+
+    .hero {
+        padding: 5rem 2rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .asesoramiento-box {
+        display: none;
+    }
+}
