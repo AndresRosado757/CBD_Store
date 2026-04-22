@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asesoramiento | Boutique de Bienestar CBD</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo" tabindex="0">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616494.png" alt="Logo CBD" class="logo-img" />
+      <h1>Boutique de Bienestar CBD</h1>
+    </div>
+    <nav aria-label="Navegación principal">
+      <ul class="header-inner">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="asesoramiento.html" class="activo">Asesoramiento</a></li>
+        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="especialista-destacado elegante">
+      <h2>Asesoramiento personalizado</h2>
+      <div class="especialista-box elegante">
+        <div>
+          <p>¿Tienes dudas sobre el CBD, el sueño, el dolor o el bienestar? Déjanos tu consulta y nuestro equipo te responderá con la máxima confidencialidad y profesionalidad. Solo se mostrará tu nombre y tu pregunta para ayudar a otros usuarios.</p>
+          <form class="form-asesoramiento" id="form-asesoramiento">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required maxlength="30">
+            <label for="consulta">Tu consulta:</label>
+            <textarea id="consulta" name="consulta" rows="4" required maxlength="300"></textarea>
+            <button type="submit">Enviar consulta</button>
+          </form>
+        </div>
+      </div>
+      <div class="consultas-publicas" id="consultas-publicas">
+        <h3>Consultas recientes</h3>
+        <ul id="lista-consultas"></ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Boutique de Bienestar CBD. Todos los derechos reservados. <a href="bases-legales.html">Bases legales</a></p>
+  </footer>
+  <script>
+    // Guardar y mostrar consultas de forma confidencial (solo nombre y consulta)
+    const form = document.getElementById('form-asesoramiento');
+    const listaConsultas = document.getElementById('lista-consultas');
+    function cargarConsultas() {
+      const consultas = JSON.parse(localStorage.getItem('consultasCBD') || '[]');
+      listaConsultas.innerHTML = '';
+      consultas.forEach(c => {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${c.nombre}:</strong> <span>${c.consulta}</span>`;
+        listaConsultas.appendChild(li);
+      });
+    }
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nombre = form.nombre.value.trim();
+      const consulta = form.consulta.value.trim();
+      if(nombre && consulta) {
+        const consultas = JSON.parse(localStorage.getItem('consultasCBD') || '[]');
+        consultas.unshift({nombre, consulta});
+        localStorage.setItem('consultasCBD', JSON.stringify(consultas));
+        form.reset();
+        cargarConsultas();
+      }
+    });
+    cargarConsultas();
+  </script>
+</body>
+</html>
