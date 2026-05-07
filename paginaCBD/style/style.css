@@ -112,6 +112,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* HERO */
@@ -183,7 +186,10 @@ body {
     height: 180px;
     background-color: var(--accent);
     border-radius: 8px;
+    aspect-ratio: 16 / 10;
     margin-bottom: 1.5rem;
+    object-fit: cover;
+    display: block;
 }
 
 .product-card h3 {
@@ -288,6 +294,10 @@ body {
 
     .products-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+    .product-image {
+        height: 200px;
+    }
     }
 }
 
@@ -335,6 +345,10 @@ body {
 
     .hero h1 {
         font-size: 3rem;
+    
+    .product-image {
+        height: 240px;
+    }
     }
 
     .products-grid {
