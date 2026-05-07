@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesoramiento - CBD Boutique</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../media/asesoramiento.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <nav class="nav-menu">
+                <div class="logo">CBD Boutique</div>
+                <button class="hamburger-btn" id="btn-menu">☰</button>
+                <ul class="menu-list" id="menu-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="../index.html#productos">Productos</a>
+                        <ul class="submenu" id="submenu">
+                            <li><a href="../index.html" id="aceites">Aceites CBD</a></li>
+                            <li><a href="../index.html" id="cremas">Cremas Aliviadoras</a></li>
+                            <li><a href="../index.html" id="cosmetica">Cosmética Natural</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="asesoramiento.html">Asesoramiento</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="hero">
+                <div class="hero-text">
+                    <h1>Asesoramiento Profesional</h1>
+                    <p>Te ayudamos a usar CBD con seguridad, legalidad y confianza.</p>
+                </div>
+            </section>
+
+            <section class="products-section">
+                <h2 class="section-title">Asesoramiento Especializado</h2>
+                <div class="products-grid">
+                    <article class="product-card">
+                        <h3>Información Legal</h3>
+                        <p>Nuestros productos de CBD se elaboran siguiendo normativas europeas estrictas y contenidos legales de THC. Queremos que tu experiencia sea segura, transparente y saludable.</p>
+                        <h3>¿Necesitas ayuda?</h3>
+                        <p>Envía tu consulta usando el formulario y nuestro equipo te ofrecerá orientación personalizada en breve.</p>
+                    </article>
+                    <article class="product-card">
+                        <form action="mailto:asesoramiento@cbdstore.com" method="post" enctype="text/plain">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
+
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="producto">Producto de interés</label>
+                            <select id="producto" name="producto">
+                                <option value="">Selecciona un producto</option>
+                                <option value="aceite-cbd">Aceite de CBD</option>
+                                <option value="capsulas-cbd">Cápsulas de CBD</option>
+                                <option value="crema-cbd">Crema de CBD</option>
+                                <option value="otros">Otros</option>
+                            </select>
+
+                            <label for="pregunta">Tu pregunta</label>
+                            <textarea id="pregunta" name="pregunta" rows="5" placeholder="Describe tu consulta..." required></textarea>
+
+                            <button type="submit" class="btn-add">Enviar Consulta</button>
+                        </form>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-info">
+                <p><strong>Tienda Física:</strong> Calle Sancho Panza, Pedro Muñoz (Cerca de Mesón Majano)</p>
+                <p>&copy; 2026 Proyecto Intermodular - IES Juan Bosco</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
