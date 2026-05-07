@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - CBD Boutique</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../media/productos.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <nav class="nav-menu">
+                <div class="logo">CBD Boutique</div>
+                <button class="hamburger-btn" id="btn-menu">☰</button>
+                <ul class="menu-list" id="menu-list">
+                    <li><a href="../index.html#inicio">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="productos.html" class="active">Productos</a>
+                        <ul class="submenu">
+                            <li><a href="productos.html">Aceites CBD</a></li>
+                            <li><a href="productos.html">Cremas Aliviadoras</a></li>
+                            <li><a href="productos.html">Cosmética Natural</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html#asesoramiento">Asesoramiento</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="hero productos-hero">
+                <div class="hero-text">
+                    <h1>Productos CBD</h1>
+                    <p>Explora nuestra selección de aceites, cremas y cosmética natural con trazabilidad europea.</p>
+                    <button id="abrir-carrito" class="btn-secondary">Ver carrito (<span id="contador-tareas">0</span>)</button>
+                </div>
+            </section>
+
+            <section class="products-section">
+                <div class="section-header">
+                    <h2 class="section-title">Catálogo de Bienestar</h2>
+                    <div id="filtros" class="filtros"></div>
+                </div>
+                <div id="grid-productos" class="products-grid"></div>
+            </section>
+        </main>
+
+        <aside id="carrito-panel" class="carrito-panel oculto" aria-hidden="true">
+            <button id="cerrar-carrito" class="btn-close">Cerrar</button>
+            <h2>Tu carrito</h2>
+            <ul id="list" class="carrito-list"></ul>
+            <div class="carrito-footer">
+                <p>Total: <strong id="total-importe">0.00€</strong></p>
+                <button id="btn-comprar" class="btn-primary">Comprar</button>
+                <p id="mensaje-compra" class="mensaje-compra"></p>
+            </div>
+        </aside>
+        <div id="carrito-overlay" class="carrito-overlay oculto"></div>
+
+        <footer class="footer">
+            <div class="footer-info">
+                <p><strong>Tienda Física:</strong> Calle Sancho Panza, Pedro Muñoz (Cerca de Mesón Majano)</p>
+                <p>&copy; 2026 Proyecto Intermodular - IES Juan Bosco</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/script2.js"></script>
+</body>
+</html>
