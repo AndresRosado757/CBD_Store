@@ -1,0 +1,79 @@
+/* Estilos adicionales para la página de asesoramiento */
+
+.products-section {
+    padding-top: 0;
+}
+
+.products-grid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+}
+
+.abogados{
+    text-align: center;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+.product-card {
+    padding: 2rem;
+    border: 1px solid rgba(44, 76, 59, 0.1);
+    background-color: var(--white);
+}
+
+.product-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+}
+
+.product-card p {
+    color: rgba(44, 76, 59, 0.85);
+    line-height: 1.9;
+}
+
+.product-card form {
+    display: grid;
+    gap: 1rem;
+}
+
+.product-card form label {
+    color: var(--dark);
+    font-weight: 600;
+    text-align: start;
+}
+
+.product-card form input,
+.product-card form select,
+.product-card form textarea {
+    border: 1px solid rgba(44, 76, 59, 0.25);
+    background-color: var(--white);
+    box-shadow: inset 0 1px 3px rgba(44, 76, 59, 0.05);
+}
+
+.product-card form textarea {
+    min-height: 12rem;
+}
+
+.product-card form .btn-add {
+    width: auto;
+    align-self: start;
+    padding: 0.95rem 1.6rem;
+    border-radius: 14px;
+}
+
+@media (min-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .hero {
+        padding: 5rem 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
