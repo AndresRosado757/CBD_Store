@@ -1,0 +1,122 @@
+[
+    {
+        "nombre": "Aceite CBD Relax",
+        "descripcion": "Aceite de espectro completo para relajación y bienestar diario.",
+        "imagen": "images/aceite_cbd_relax.jpg",
+        "categoria": "aceites"
+    },
+    {
+        "nombre": "Gominolas CBD Frutos Rojos",
+        "descripcion": "Caramelos masticables con CBD y sabor a frutos rojos para un consumo fácil.",
+        "imagen": "images/gominolas_cbd_frutos_rojos.jpg",
+        "categoria": "cosmetica natural"
+    },
+    {
+        "nombre": "Crema CBD Sport",
+        "descripcion": "Crema tópica con CBD para aliviar tensiones musculares y molestias localizadas.",
+        "imagen": "images/crema_cbd_sport.jpg",
+        "categoria": "cremas aliviadoras"
+    },
+    {
+        "nombre": "Capsulas CBD Balance",
+        "descripcion": "Cápsulas de CBD para una dosificación precisa y apoyo al equilibrio diario.",
+        "imagen": "images/capsulas_cbd_balance.jpg",
+        "categoria": "cosmetica natural"
+    },
+    {
+        "nombre": "Bálsamo CBD Piel",
+        "descripcion": "Bálsamo nutritivo con CBD para hidratar y calmar la piel seca.",
+        "imagen": "images/balsamo_cbd_piel.jpg",
+        "categoria": "cremas aliviadoras"
+    },
+    {
+        "nombre": "Spray Bucal CBD",
+        "descripcion": "Spray sublingual de CBD para una absorción rápida y discreta.",
+        "imagen": "images/spray_bucal_cbd.jpg",
+        "categoria": "cosmetica natural"
+    },
+    {
+        "nombre": "Chocolate CBD",
+        "descripcion": "Tableta de chocolate con extracto de CBD para disfrutar de un momento de calma.",
+        "imagen": "images/chocolate_cbd.jpg",
+        "categoria": "cosmetica natural"
+    },
+    {
+        "nombre": "Infusión CBD Relax",
+        "descripcion": "Té herbáceo con CBD para una bebida relajante antes de dormir.",
+        "imagen": "images/infusion_cbd_relax.jpg",
+        "categoria": "cosmetica natural"
+    },
+    {
+        "nombre": "Aceite CBD 5%",
+        "descripcion": "Aceite de CBD con concentración del 5% para uso diario.",
+        "imagen": "images/aceite_cbd_10.jpg",
+        "categoria": "aceites"
+    },
+    {
+        "nombre": "Aceite CBD 30%",
+        "descripcion": "Aceite de CBD de alta potencia con aceite de semilla de cáñamo.",
+        "imagen": "images/aceite_cbd_20.jpg",
+        "categoria": "aceites"
+    },
+    {
+        "nombre": "Cápsulas CBD Sport",
+        "descripcion": "Cápsulas formuladas para deportistas con CBD y magnesio.",
+        "imagen": "images/capsulas_cbd_sport.jpg",
+        "categoria": "cosmetica natural"
+    },
+    {
+        "nombre": "Gotas CBD Sueño",
+        "descripcion": "Extracto de CBD con melatonina para mejorar el descanso nocturno.",
+        "imagen": "images/gotas_cbd_sueno.webp",
+        "categoria": "cosmetica natural"
+    },
+    {
+        "nombre": "Crema CBD Repair",
+        "descripcion": "Crema regeneradora con CBD para piel fatigada y dañada.",
+        "imagen": "images/crema_cbd_repair.jpg",
+        "categoria": "cremas aliviadoras"
+    },
+    {
+        "nombre": "Bálsamo Labial CBD",
+        "descripcion": "Protector labial con CBD para labios suaves e hidratados.",
+        "imagen": "images/balsamo_labial_cbd.jpg",
+        "categoria": "cremas aliviadoras"
+    },
+    {
+        "nombre": "Gominolas CBD Energía",
+        "descripcion": "Gominolas con CBD y cafeína natural para un impulso suave.",
+        "imagen": "images/gominolas_cbd_energia.jpg",
+        "categoria": "cosmetica natural"
+    },
+    {
+        "nombre": "Aceite CBD Pet",
+        "descripcion": "Aceite especialmente formulado para mascotas con CBD de grado alimentario.",
+        "imagen": "images/aceite_cbd_pet.jpg",
+        "categoria": "aceites"
+    },
+    {
+        "nombre": "Té Matcha CBD",
+        "descripcion": "Polvo de matcha con CBD para una bebida concentrada y equilibrante.",
+        "imagen": "images/te_matcha_cbd.jpg",
+        "categoria": "cosmetica natural"
+    },
+    {
+        "nombre": "Parches CBD Relax",
+        "descripcion": "Parches transdérmicos con CBD para liberación prolongada y calma.",
+        "imagen": "images/parches_cbd_relax.jpg",
+        "categoria": "cremas aliviadoras"
+    },
+    {
+        "nombre": "Spray Corporal CBD",
+        "descripcion": "Spray refrescante con CBD para aplicar en zonas tensas del cuerpo.",
+        "imagen": "images/spray_corporal_cbd.jpg",
+        "categoria": "cremas aliviadoras"
+    },
+    {
+        "nombre": "Aceite CBD Naranja",
+        "descripcion": "Aceite de CBD con aroma cítrico de naranja para un uso agradable.",
+        "imagen": "images/aceite_cbd_naranja.jpg",
+        "categoria": "aceites"
+    }
+]

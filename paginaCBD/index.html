@@ -20,10 +20,10 @@
                     <li><a href="#inicio">Inicio</a></li>
                     <li class="dropdown">
                         <a href="#productos">Productos</a>
-                        <ul class="submenu">
-                            <li><a href="#">Aceites CBD</a></li>
-                            <li><a href="#">Cremas Aliviadoras</a></li>
-                            <li><a href="#">Cosmética Natural</a></li>
+                        <ul class="submenu" id="submenu">
+                            <li><a href="#" id="aceites">Aceites CBD</a></li>
+                            <li><a href="#" id="cremas">Cremas Aliviadoras</a></li>
+                            <li><a href="#" id="cosmetica">Cosmética Natural</a></li>
                         </ul>
                     </li>
                     <li><a href="#asesoramiento">Asesoramiento</a></li>
@@ -43,36 +43,9 @@
             </section>
 
             <section id="productos" class="products-section">
-                <h2 class="section-title">Nuestras Líneas de Bienestar</h2>
-                <div class="products-grid">
-                    <article class="product-card">
-                        <div class="product-image oils"></div>
-                        <h3>Aceites CBD</h3>
-                        <p>Mejora tu ciclo del sueño y alivia dolencias de forma natural.</p>
-                        <button class="btn-add">Añadir al carrito</button>
-                    </article>
-
-                    <article class="product-card">
-                        <div class="product-image creams"></div>
-                        <h3>Cremas Antiinflamatorias</h3>
-                        <p>Especialmente diseñadas para el desgaste físico y muscular.</p>
-                        <button class="btn-add">Añadir al carrito</button>
-                    </article>
-
-                    <article class="product-card">
-                        <div class="product-image cosmetic"></div>
-                        <h3>Línea Cosmética</h3>
-                        <p>Cuidado de la piel libre de químicos sintéticos.</p>
-                        <button class="btn-add">Añadir al carrito</button>
-                    </article>
-                    
-                    <article class="product-card">
-                        <div class="product-image pack"></div>
-                        <h3>Pack Integral</h3>
-                        <p>La combinación perfecta para un descanso y recuperación total.</p>
-                        <button class="btn-add">Añadir al carrito</button>
-                    </article>
-                </div>
+                <h2 class="section-title">Nuestros Productos</h2>
+                <p class="section-subtitle">Selecciona una categoría en el menú para ver los artículos disponibles.</p>
+                <div id="productos-container" class="products-grid"></div>
             </section>
 
             <aside id="asesoramiento" class="asesoramiento-box">
